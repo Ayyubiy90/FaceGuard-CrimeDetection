@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+/pids
+*.pid
+*.seed
+*.pid.lock
+
+lib-cov
+
+coverage
+
+.grunt
+
+node_modules
