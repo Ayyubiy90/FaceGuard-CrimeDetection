@@ -1,0 +1,15 @@
+{
+  "name": "faceguard-crimedetection",
+  "version": "1.0.0",
+  "description": "A facial recognition system designed to assist in crime detection. Built with React, Node.js, HTML, CSS, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

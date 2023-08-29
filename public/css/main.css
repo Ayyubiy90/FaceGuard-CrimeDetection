@@ -1,0 +1,136 @@
+/* Reset and Universal Styles */
+body,
+h1,
+ul,
+li,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #003366, #00cccc);
+  background-attachment: fixed;
+}
+
+/* Header */
+header {
+  background-color: #24252a;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons and Icons */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+button:active {
+  background-color: #004080;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+button i.fas,
+i.far {
+  margin-right: 8px;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #24252a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Input Fields */
+input[type="file"] {
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Image Preview */
+#image-preview {
+  max-width: 100%;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Text Alignment and Spacing for Headings */
+h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-top-color: #636363;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

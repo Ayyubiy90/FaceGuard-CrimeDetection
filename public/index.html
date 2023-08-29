@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrimeFaceDetect</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>CrimeFaceDetect</h1>
+        <nav>
+            <ul>
+                <li><a href="#upload-section">Upload</a></li>
+                <li><a href="#result-section">Results</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Image</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="clear-upload">Clear</button>
+        </section>
+
+        <section id="image-preview-section">
+            <h2>Image Preview</h2>
+            <img id="image-preview" alt="Image preview will appear here" style="display:none;">
+            <button id="rotate-image">Rotate</button>
+        </section>
+
+        <section id="run-section">
+            <h2>Run Detection</h2>
+            <button id="run-detection">Run</button>
+            <button id="cancel-detection">Cancel</button>
+        </section>
+
+        <section id="result-section">
+            <h2>Results</h2>
+            <div id="results">
+                <!-- Facial recognition results will appear here -->
+            </div>
+            <button id="export-results">Export Results</button>
+        </section>
+
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>
+                This is a facial recognition system aimed at assisting in crime detection.
+            </p>
+        </section>
+        <section id="loading-section" style="display:none;">
+            <h2>Loading...</h2>
+            <div id="spinner"></div>
+        </section>
+        <section id="error-section" style="display:none;">
+            <h2>Error</h2>
+            <p id="error-message"></p>
+        </section>
+        <section id="help-section">
+            <h2>Help</h2>
+            <p>Upload an image and click 'Run' to perform facial recognition.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CrimeFaceDetect. All Rights Reserved.</p>
+    </footer>
+
+    <!-- You can link your JavaScript here later -->
+    <!-- At the bottom of your HTML file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
