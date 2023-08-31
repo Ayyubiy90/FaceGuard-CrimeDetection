@@ -1,3 +1,5 @@
+require('dotenv').config();  // assuming you have a .env file in your root directory
+
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
@@ -5,14 +7,14 @@ const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 const MongoClient = require("mongodb").MongoClient;
 
-// Connect to localhost at the default port 27017, and use a database named "faceGuardDB"
-const uri = "mongodb://localhost:27017/faceGuardDB";
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
+// rest of code
 client.connect((err) => {
   if (err) {
     console.error("Failed to connect to MongoDB", err);

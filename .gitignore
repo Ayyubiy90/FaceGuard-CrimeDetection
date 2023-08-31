@@ -13,3 +13,6 @@ coverage
 .grunt
 
 node_modules
+
+# Add this line to ignore the .env file
+.env
