@@ -1,4 +1,4 @@
-require('dotenv').config();  // assuming you have a .env file in your root directory
+require('dotenv').config();  //assuming you have a .env file in your root directory
 
 const express = require("express");
 const app = express();
@@ -11,7 +11,7 @@ const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true, 
 });
 
 // rest of code
